@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+
+    nav {
+        position: relative;
+        display: flex;
+        max-width: 1380px;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            column-gap: 40px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: var(--text-color);
+                }
+            }
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: fit-content;
+            height: fit-content;
+
+            img {
+                object-fit: cover;
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .cta {
+            padding: 16px 32px;
+            font-family: 'Oswald';
+            font-size: 16;
+            font-weight: 700;
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    }
+}
