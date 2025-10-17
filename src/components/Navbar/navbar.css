@@ -21,6 +21,7 @@ header {
             list-style: none;
             display: flex;
             column-gap: 40px;
+            padding: 0;
 
             li {
                 a {
