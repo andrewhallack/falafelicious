@@ -1,23 +1,58 @@
 import './whats-inside.css'
 import leftTable from '../../assets/left-table.png'
 import rightTable from '../../assets/right-table.png'
+import { motion } from "framer-motion"
 
 const WhatsInside = () => {
   return (
     <section className='whats-inside'>
-        <div className='image-wrapper'>
-            <img className='left' src={leftTable} />
-            <img className='right' src={rightTable} />
-        </div>
-        <div className='img-wrapper-mobile top'>
-          <img src={leftTable} />
-        </div>
-        <p>
+      <div className='image-wrapper'>
+        <motion.img 
+          className='left' 
+          src={leftTable} 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+        />
+        <motion.img 
+          className='right' 
+          src={rightTable} 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
+        />
+      </div>
+
+      <motion.div 
+        className='img-wrapper-mobile top'
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut", delay: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <img src={leftTable} />
+      </motion.div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut", delay: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         Each bag of Falafelicious contains 12 crispy falafel balls made from chickpeas, parsley, onion, garlic, and spices. That’s it — clean ingredients you can trust.
-        </p>
-        <div className='img-wrapper-mobile bottom'>
-          <img src={rightTable} />
-        </div>
+      </motion.p>
+
+      <motion.div 
+        className='img-wrapper-mobile bottom'
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut", delay: 0.9 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <img src={rightTable} />
+      </motion.div>
     </section>
   )
 }

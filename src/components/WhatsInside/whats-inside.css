@@ -24,11 +24,11 @@
         }
 
         .left {
-            transform: rotate(3deg);
+            rotate: 3deg;
         }
         
         .right {
-            transform: rotate(-5deg);
+            rotate: -5deg;
         }
     }
 
