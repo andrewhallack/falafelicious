@@ -9,7 +9,8 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <HealthIcons />
+      <HealthIcons />\
+      <Intro />
     </>
   )
 }

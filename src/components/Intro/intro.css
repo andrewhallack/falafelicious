@@ -4,36 +4,24 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    padding: 120px 0;
     
     .intro-wrapper {
         display: flex;
+        flex-direction: column;
         width: 100%;
-        max-width: 1380px;
-        column-gap: 60px;
+        row-gap: 24px;
+        align-items: center;
+        justify-content: center;
 
         img {
             object-fit: cover;
-            border-radius: 50px;
-            width: 50%;
-            max-height: 500px;
+            max-width: 200px;
         }
 
-        .info {
-            display: flex;
-            flex-direction: column;
-            row-gap: 40px;
-            width: 50%;
-            align-items: center;
-            justify-content: center;
-
-            h3 {
-                color: var(--primary-color);
-            }
-            
-            p {
-                color: var(--text-color);
-                opacity: 0.8;
-            }
+        p {
+            max-width: 600px;
+            text-align: center;
         }
     }
 }
