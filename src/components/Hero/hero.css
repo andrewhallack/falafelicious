@@ -2,21 +2,37 @@
     width: 100%;
     height: 100%;
     padding-top: 100px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    .hero-container {
+    .hero-top {
+        display: flex;
         width: 100%;
         height: 100%;
-        max-width: 1380px;
-        max-height: 720px;
-        border-radius: 50px;
-        overflow: hidden;
+        justify-content: center;
+    }
+    
+    .hero-bottom {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        transform: translateY(-20px);
 
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
+        h1 {
+            font-size: 140px;
         }
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-width: 720px;
+        max-height: 480px;
+        border-radius: 40px;
+        transform: rotate(3deg);
     }
 }

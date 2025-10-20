@@ -1,13 +1,17 @@
 import './hero.css'
-import hero from '../../assets/hero-bg.png'
+import hero from '../../assets/falafeltable.jpeg'
 
 const Hero = () => {
   return (
-    <div className='hero'>
-        <div className='hero-container'>
+    <section className='hero'>
+            <div className='hero-top'>
+              <h1>DELICIOUS, NUTRITIOUS,</h1>
+            </div>
             <img src={hero} />
-        </div>
-    </div>
+            <div className='hero-bottom'>
+              <h1>FALAFELICIOUS</h1>
+            </div>
+    </section>
   )
 }
 

@@ -9,12 +9,19 @@
   --primary-color: #24532C;
   --brown: #9D7036;
   --red: #FF3236;
-  
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: var(--text-color);
+  line-height: 1;
+  font-size: 100px;
+  margin: 0
 }
 
 h3 {
