@@ -10,22 +10,22 @@ const NutritionFacts = () => {
                 onion, garlic, and spices. That’s it — clean ingredients you can trust.
             </p>
         </div>
-        <div className='black'>
-            <h3>100%</h3>
-            <h4>DELICIOUS</h4>
-        </div>
+
         <div className='green'>
             <h3>9g</h3>
             <h4>FIBER PER SERVING</h4>
+        </div>
+        <div className='brown'>
+            <h3>13g</h3>
+            <h4>PROTEIN PER SERVING</h4>
         </div>
         <div className='red'>
             <h3>260</h3>
             <h4>CALORIES PER SERVING</h4>
         </div>
-        <div className='brown'>
-            
-            <h3>13g</h3>
-            <h4>PROTEIN PER SERVING</h4>
+        <div className='black'>
+            <h3>100%</h3>
+            <h4>DELICIOUS</h4>
         </div>
     </section>
   )

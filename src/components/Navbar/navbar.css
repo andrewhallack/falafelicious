@@ -94,7 +94,10 @@ header {
     }
 
     @media screen and (max-width: 1100px) {
+        height: fit-content;
+        
         nav {
+            padding: 6vw;
             ul {
                 display: none;
             }

@@ -61,7 +61,7 @@
 
     @media screen and (max-width: 1100px) {
         flex-direction: column;
-        row-gap: 120px;
+        row-gap: 60px;
 
         .img-wrapper {
             width: 30vw;
@@ -80,8 +80,6 @@
     }
     
     @media screen and (max-width: 700px) {
-        flex-direction: column;
-        row-gap: 120px;
 
         .img-wrapper {
             width: 50vw;

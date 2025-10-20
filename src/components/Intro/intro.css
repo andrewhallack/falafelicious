@@ -21,6 +21,10 @@
             margin-bottom: 20px;
         }
 
+        h3 {
+            text-align: center;
+        }
+
         p {
             max-width: 600px;
             text-align: center;
@@ -28,10 +32,6 @@
     }
 
     @media screen and (max-width: 1100px) {
-        h3 {
-            font-size: 32px;
-        }
-
         p {
             font-size: 14px;
         }
