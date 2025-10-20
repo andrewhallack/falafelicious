@@ -12,7 +12,7 @@ const WhatsInside = () => {
           src={leftTable} 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0 }}
           viewport={{ once: true, amount: 0.3 }}
         />
         <motion.img 
@@ -20,7 +20,7 @@ const WhatsInside = () => {
           src={rightTable} 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0.15 }}
           viewport={{ once: true, amount: 0.3 }}
         />
       </div>
@@ -29,7 +29,7 @@ const WhatsInside = () => {
         className='img-wrapper-mobile top'
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, ease: "easeOut", delay: 0.3 }}
+        transition={{ duration: 0.3, ease: "easeOut", delay: 0 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <img src={leftTable} />
@@ -38,7 +38,7 @@ const WhatsInside = () => {
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, ease: "easeOut", delay: 0.6 }}
+        transition={{ duration: 0.3, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         Each bag of Falafelicious contains 12 crispy falafel balls made from chickpeas, parsley, onion, garlic, and spices. That’s it — clean ingredients you can trust.
@@ -48,7 +48,7 @@ const WhatsInside = () => {
         className='img-wrapper-mobile bottom'
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, ease: "easeOut", delay: 0.9 }}
+        transition={{ duration: 0.3, ease: "easeOut", delay: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <img src={rightTable} />
