@@ -40,7 +40,7 @@
             width: 50vw;
             height: 50vh;
             border-radius: 40px;
-            transform: rotate(3deg);
+            rotate: 3deg;
         }
     }
 
@@ -48,7 +48,8 @@
         .hero-wrapper {        
             .hero-top {
                 h1 {
-                    font-size: 9vw;
+                    font-size: 13vw;
+                    text-align: center;
                 }
             }
 
@@ -59,7 +60,7 @@
             }
 
             img {
-                width: 70vw;
+                width: 80vw;
             }
         }
     }
