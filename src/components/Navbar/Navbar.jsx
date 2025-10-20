@@ -6,13 +6,13 @@ const Navbar = () => {
     <header>
         <nav>
             <ul className='menu'>
-                <li><a>About</a></li>
-                <li><a>TikTok</a></li>
-                <li><a>Instagram</a></li>
+                <li><a>ABOUT</a></li>
+                <li><a>TIKTOK</a></li>
+                <li><a>INSTAGRAM</a></li>
             </ul>
-            <span className='logo'>
+            {/* <span className='logo'>
                 <img src={logo} />
-            </span>
+            </span> */}
             <button className='cta'>
                 FIND US IN STORES
             </button>
