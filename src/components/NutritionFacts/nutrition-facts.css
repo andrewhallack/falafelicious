@@ -44,8 +44,8 @@
 
     .black {
         background-color: var(--text-color);
-        top: 0px;
-        left: 60px;
+        bottom: 0px;
+        right: 60px;
         transform: rotate(-15deg);
     }
     
@@ -65,8 +65,8 @@
     
     .brown {
         background-color: var(--brown);
-        bottom: 0px;
-        right: 60px;
+        top: 0px;
+        left: 60px;
         transform: rotate(-15deg);
     }
 }

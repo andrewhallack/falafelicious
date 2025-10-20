@@ -4,6 +4,7 @@ import HealthIcons from './components/HealthIcons/HealthIcons'
 import Intro from './components/Intro/Intro'
 import NutritionFacts from './components/NutritionFacts/NutritionFacts'
 import WhatsInside from './components/WhatsInside/WhatsInside'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Intro />
       <WhatsInside />
       <NutritionFacts />
+      <Footer />
     </>
   )
 }
