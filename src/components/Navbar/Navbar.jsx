@@ -16,8 +16,8 @@ const Navbar = () => {
         <nav>
             <ul className='menu'>
                 {/* <li><a>ABOUT</a></li> */}
-                <li><a>TIKTOK</a></li>
-                <li><a>INSTAGRAM</a></li>
+                <li><a href='https://www.tiktok.com/@falafeliciousaus' target='_blank'>TIKTOK</a></li>
+                <li><a href='https://www.instagram.com/falafeliciousfoods/' target='_blank'>INSTAGRAM</a></li>
             </ul>
             {/* <span className='logo'>
                 <img src={logo} />
@@ -34,8 +34,8 @@ const Navbar = () => {
             </button>
             <ul className={activeMenu ? 'menu-mobile active' : 'menu-mobile'}>
                 {/* <li><a>ABOUT</a></li> */}
-                <li><a>TIKTOK</a></li>
-                <li><a>INSTAGRAM</a></li>
+                <li><a href='https://www.tiktok.com/@falafeliciousaus' target='_blank'>TIKTOK</a></li>
+                <li><a href='https://www.instagram.com/falafeliciousfoods/' target='_blank'>INSTAGRAM</a></li>
             </ul>
         </nav>
     </header>

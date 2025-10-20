@@ -20,6 +20,7 @@
 
             h1 {
                 font-size: 120px;
+                text-align: center;
             }
         }
         
@@ -49,7 +50,6 @@
             .hero-top {
                 h1 {
                     font-size: 13vw;
-                    text-align: center;
                 }
             }
 

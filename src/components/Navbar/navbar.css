@@ -144,11 +144,13 @@ header {
                 }
 
                 li {
-                    text-decoration: none;
-                    cursor: pointer;
-                    color: var(--text-color);
-                    font-weight: bold;
-                    font-size: 60px;
+                    a {
+                        text-decoration: none;
+                        cursor: pointer;
+                        color: var(--text-color);
+                        font-weight: bold;
+                        font-size: 60px;
+                    }
                 }
             }
 
