@@ -3,7 +3,7 @@ import nugget from '../../assets/falafel-nugget.png'
 
 const Intro = () => {
   return (
-    <div className='intro'>
+    <section className='intro'>
         <div className='intro-wrapper'>
             <img src={nugget} />
             <h3>A COMMUNITY FAVORITE</h3>
@@ -13,7 +13,7 @@ const Intro = () => {
             Middle-Eastern treat with you.
             </p>
         </div>
-    </div>
+    </section>
   )
 }
 
