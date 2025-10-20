@@ -1,0 +1,62 @@
+.nutrition-facts {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .moving-words {
+        width: fit-content;
+        display: flex;
+        column-gap: 100px;
+        animation: slidewords 6s linear infinite;
+        align-self: flex-start;
+
+        h1 {
+            color: var(--accent);
+            font-size: 120px;
+            white-space: nowrap;
+        } 
+    }
+
+    .info-wrapper {
+        display: flex;
+        width: 100%;
+        max-width: 1380px;
+        column-gap: 60px;
+
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            width: 50%;
+            justify-content: center;
+    
+            h3 {
+                color: var(--primary-color);
+            }
+            
+            p {
+                color: var(--text-color);
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .card {
+        
+    }
+}
+
+@keyframes slidewords {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-50% - 50px));
+    }
+}

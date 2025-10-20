@@ -23,7 +23,6 @@
             flex-direction: column;
             row-gap: 40px;
             width: 50%;
-            align-items: center;
             justify-content: center;
 
             h3 {

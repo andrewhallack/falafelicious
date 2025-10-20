@@ -4,9 +4,12 @@
 :root {
   font-family: 'Oswald';
 
-  --text-color: #1a1a1a;
-  --bg-color: #fff;
+  --text-color: #020305;
+  --bg-color: #C8D1C2;
   --primary-color: #24532C;
+  --brown: #9D7036;
+  --red: #FF3236;
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -7,7 +7,7 @@ const Intro = () => {
         <div className='intro-wrapper'>
             <img src={image} />
             <div className='info'>
-                <h3>Wholesome, Simple, Delicious</h3>
+                <h3>A Family Recipe</h3>
                 <p>
                 Falafelicious was born in Austin, Texas, at a local farmers market. What started as a
                 family recipe quickly turned into a community favorite. We believe everyone deserves
