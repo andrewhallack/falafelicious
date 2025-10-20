@@ -1,62 +1,72 @@
 .nutrition-facts {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100svh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 
-    .moving-words {
-        width: fit-content;
+    .info {
         display: flex;
-        column-gap: 100px;
-        animation: slidewords 6s linear infinite;
-        align-self: flex-start;
-
-        h1 {
-            color: var(--accent);
-            font-size: 120px;
-            white-space: nowrap;
-        } 
-    }
-
-    .info-wrapper {
-        display: flex;
-        width: 100%;
-        max-width: 1380px;
-        column-gap: 60px;
-
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            row-gap: 40px;
-            width: 50%;
-            justify-content: center;
-    
-            h3 {
-                color: var(--primary-color);
-            }
-            
-            p {
-                color: var(--text-color);
-                opacity: 0.8;
-            }
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            max-width: 600px;
+            text-align: center;
         }
     }
 
-    .card {
-        
-    }
-}
+    .black, .red,
+    .green, .brown {
+        width: 300px;
+        aspect-ratio: 1;
+        border-radius: 40px;
+        color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        position: absolute;
 
-@keyframes slidewords {
-    0% {
-        transform: translateX(0%);
+        h3 {
+            font-size: 60px;
+            line-height: 1;
+        }
+
+        h4 {
+            font-size: 24px;
+            line-height: 1;
+        }
     }
-    100% {
-        transform: translateX(calc(-50% - 50px));
+
+    .black {
+        background-color: var(--text-color);
+        top: 0px;
+        left: 60px;
+        transform: rotate(-15deg);
+    }
+    
+    .red {
+        background-color: var(--red);
+        top: 0px;
+        right: 60px;
+        transform: rotate(15deg);
+    }
+    
+    .green {
+        background-color: var(--primary-color);
+        bottom: 0px;
+        left: 60px;
+        transform: rotate(15deg);
+    }
+    
+    .brown {
+        background-color: var(--brown);
+        bottom: 0px;
+        right: 60px;
+        transform: rotate(-15deg);
     }
 }

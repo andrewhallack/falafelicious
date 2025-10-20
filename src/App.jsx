@@ -13,6 +13,7 @@ function App() {
       <HealthIcons />
       <Intro />
       <WhatsInside />
+      <NutritionFacts />
     </>
   )
 }
