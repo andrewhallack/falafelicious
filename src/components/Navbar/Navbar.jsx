@@ -1,12 +1,21 @@
 import './navbar.css'
 import logo from '../../assets/Logo.png'
 
+import { useState } from 'react'
+
+
 const Navbar = () => {
+  const [activeMenu, setActiveMenu] = useState(false)
+
+  const toggleMenu = () => {
+    setActiveMenu(!activeMenu)
+  }
+
   return (
     <header>
         <nav>
             <ul className='menu'>
-                <li><a>ABOUT</a></li>
+                {/* <li><a>ABOUT</a></li> */}
                 <li><a>TIKTOK</a></li>
                 <li><a>INSTAGRAM</a></li>
             </ul>
@@ -16,11 +25,18 @@ const Navbar = () => {
             <button className='cta'>
                 FIND US IN STORES
             </button>
-            <button className='hamburger'>
+            <button 
+                className={activeMenu ? 'hamburger active' : 'hamburger'}
+                onClick={() => toggleMenu()}
+            >
                 <span className='top' />
-                <span className='middle' />
                 <span className='bottom' />
             </button>
+            <ul className={activeMenu ? 'menu-mobile active' : 'menu-mobile'}>
+                {/* <li><a>ABOUT</a></li> */}
+                <li><a>TIKTOK</a></li>
+                <li><a>INSTAGRAM</a></li>
+            </ul>
         </nav>
     </header>
   )

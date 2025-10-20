@@ -17,7 +17,7 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        ul {
+        .menu {
             list-style: none;
             display: flex;
             column-gap: 32px;
@@ -59,36 +59,48 @@ header {
             border: none;
             border-radius: 12px;
             cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+               box-shadow: 0 0 8px 2px #24532C55;
+            }
         }
 
         .hamburger {
+            position: relative;
             display: none;
-            flex-direction: column;
-            row-gap: 4px;
             border: none;
             background-color: transparent;
             padding: 0;
             margin: 0;
             cursor: pointer;
+            width: 30px;
+            height: 10px;
+            transition: 0.3s all ease;
 
-            .top, .middle, .bottom {
-                height: 2px;
+            .top, .bottom {
+                position: absolute;
+                width: 30px;
+                height: 3px;
                 border-radius: 20px;
                 background-color: var(--text-color);
-                padding: 0;
-                margin: 0; 
+                left: 0;
+                transition: all 0.3s ease; 
             }
 
             .top {
-                width: 26px;
-            }
-            
-            .middle {
-                width: 30px;
+                top: 0%;
             }
             
             .bottom {
-                width: 20px;
+                bottom: 0;
+            }
+
+            &.active {
+                .top, .bottom {
+                    top: 50%;
+                    transform: translate(0, -50%);
+                } 
             }
         }
     }
@@ -97,9 +109,43 @@ header {
         height: fit-content;
         
         nav {
-            padding: 6vw;
-            ul {
+            padding: 20px;
+            
+            .menu {
                 display: none;
+            }
+
+            .menu-mobile {
+                position: absolute;
+                margin: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: var(--bg-color);
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                visibility: hidden;
+                list-style: none;
+                z-index: -1;
+                transition: 0.3s all ease;
+                box-sizing: border-box;
+
+                &.active {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                li {
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: var(--text-color);
+                    font-weight: bold;
+                    font-size: 60px;
+                }
             }
 
             .cta {
