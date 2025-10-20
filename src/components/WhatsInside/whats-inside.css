@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
     row-gap: 20px;
+    padding: 0 4vw;
+    box-sizing: border-box;
 
     .image-wrapper {
         width: 100%;
@@ -30,8 +32,38 @@
         }
     }
 
+    .img-wrapper-mobile {
+        min-width: 320px;
+        width: 40vw;
+        display: none;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        &.top {
+            transform: rotate(3deg);
+        }
+
+        &.bottom {
+            transform: rotate(-5deg);
+        }
+    }
+
     p {
         max-width: 600px;
         text-align: center;
+    }
+
+    @media screen and (max-width: 868px) {
+        .image-wrapper {
+            display: none;
+        }
+
+        .img-wrapper-mobile {
+            display: flex;
+        }
     }
 }

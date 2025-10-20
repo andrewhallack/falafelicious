@@ -9,9 +9,15 @@ const WhatsInside = () => {
             <img className='left' src={leftTable} />
             <img className='right' src={rightTable} />
         </div>
+        <div className='img-wrapper-mobile top'>
+          <img src={leftTable} />
+        </div>
         <p>
         Each bag of Falafelicious contains 12 crispy falafel balls made from chickpeas, parsley, onion, garlic, and spices. That’s it — clean ingredients you can trust.
         </p>
+        <div className='img-wrapper-mobile bottom'>
+          <img src={rightTable} />
+        </div>
     </section>
   )
 }
