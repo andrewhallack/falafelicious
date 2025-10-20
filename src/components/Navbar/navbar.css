@@ -50,7 +50,7 @@ header {
         .cta {
             padding: 16px 32px;
             font-family: 'Oswald';
-            font-size: 16;
+            font-size: 16px;
             font-weight: 700;
             background-color: var(--primary-color);
             color: var(--bg-color);
