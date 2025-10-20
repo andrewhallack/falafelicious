@@ -1,0 +1,21 @@
+.mobile-button {
+    display: none;
+    position: fixed;
+    width: 96vw;
+    padding: 12px 16px;
+    font-family: 'Oswald';
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    bottom: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 1100px) {
+        /* display: block; */
+    }
+}

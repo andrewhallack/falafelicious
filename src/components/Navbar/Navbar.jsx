@@ -16,6 +16,11 @@ const Navbar = () => {
             <button className='cta'>
                 FIND US IN STORES
             </button>
+            <button className='hamburger'>
+                <span className='top' />
+                <span className='middle' />
+                <span className='bottom' />
+            </button>
         </nav>
     </header>
   )

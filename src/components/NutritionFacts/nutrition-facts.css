@@ -22,7 +22,6 @@
     .black, .red,
     .green, .brown {
         width: 300px;
-        aspect-ratio: 1;
         border-radius: 40px;
         color: var(--bg-color);
         display: flex;
@@ -34,39 +33,41 @@
         h3 {
             font-size: 60px;
             line-height: 1;
+            margin-bottom: 20px;
         }
 
         h4 {
             font-size: 24px;
             line-height: 1;
+            margin: 0;
         }
     }
 
     .black {
         background-color: var(--text-color);
-        bottom: 0px;
-        right: 60px;
+        bottom: 4vh;
+        right: 10vw;
         transform: rotate(-15deg);
     }
     
     .red {
         background-color: var(--red);
-        top: 0px;
-        right: 60px;
+        top: 4vh;
+        right: 10vw;
         transform: rotate(15deg);
     }
     
     .green {
         background-color: var(--primary-color);
-        bottom: 0px;
-        left: 60px;
+        bottom: 4vh;
+        left: 10vw;
         transform: rotate(15deg);
     }
     
     .brown {
         background-color: var(--brown);
-        top: 0px;
-        left: 60px;
+        top: 4vh;
+        left: 10vw;
         transform: rotate(-15deg);
     }
 }

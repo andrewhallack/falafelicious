@@ -4,6 +4,7 @@
     min-height: 100svh;
     display: grid;
     place-items: center;
+    box-sizing: border-box;
 
     .hero-wrapper {
         display: flex;
@@ -27,7 +28,7 @@
             width: 100%;
             height: 100%;
             justify-content: center;
-            transform: translateY(-20px);
+            transform: translateY(-1vh);
 
             h1 {
                 font-size: 160px;
@@ -36,10 +37,30 @@
 
         img {
             object-fit: cover;
-            width: 40vw;
+            width: 50vw;
             height: 50vh;
             border-radius: 40px;
             transform: rotate(3deg);
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        .hero-wrapper {        
+            .hero-top {
+                h1 {
+                    font-size: 10vw;
+                }
+            }
+
+            .hero-bottom {
+                h1 {
+                    font-size: 14vw;
+                }
+            }
+
+            img {
+                width: 70vw;
+            }
         }
     }
 }

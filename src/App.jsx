@@ -5,6 +5,7 @@ import Intro from './components/Intro/Intro'
 import NutritionFacts from './components/NutritionFacts/NutritionFacts'
 import WhatsInside from './components/WhatsInside/WhatsInside'
 import Footer from './components/Footer/Footer'
+import MobileButton from './components/Navbar/MobileButton'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <WhatsInside />
       <NutritionFacts />
       <Footer />
+      <MobileButton />
     </>
   )
 }
