@@ -17,7 +17,7 @@ const NutritionFacts = () => {
         </div>
         <div className='brown'>
             <h3>13g</h3>
-            <h4>PROTEIN PER SERVING</h4>
+            <h4>PLANT PROTEIN PER SERVING</h4>
         </div>
         <div className='red'>
             <h3>260</h3>
@@ -25,7 +25,7 @@ const NutritionFacts = () => {
         </div>
         <div className='black'>
             <h3>100%</h3>
-            <h4>DELICIOUS</h4>
+            <h4>FALAFELICIOUS</h4>
         </div>
     </section>
   )

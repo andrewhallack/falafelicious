@@ -7,11 +7,12 @@
   font-family: 'Oswald';
 
   --text-color: #020305;
-  --bg-color: #C8D1C2;
+  --bg-color: #EAD3BE;
   --primary-color: #24532C;
   --brown: #9D7036;
   --red: #FF3236;
 
+  color: var(--text-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
