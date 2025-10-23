@@ -41,7 +41,7 @@ const WhatsInside = () => {
         transition={{ duration: 0.3, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        Each bag of Falafelicious contains 12 crispy falafel balls made from chickpeas, parsley, onion, garlic, and spices. That’s it — clean ingredients you can trust.
+        Each bag of Falafelicious contains 12 crispy falafel balls made from chickpeas, fava beans, and spices. That’s it — clean ingredients you can trust.
       </motion.p>
 
       <motion.div 

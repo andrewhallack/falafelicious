@@ -24,12 +24,14 @@ const Navbar = () => {
                     <FaInstagram className='icon' />
                 </a></li>
             </ul>
-            {/* <span className='logo'>
-                <img src={logo} />
-            </span> */}
-            <button className='cta'>
-                FIND US IN STORES
-            </button>
+            <a href='/'>            
+                <span className='logo'>
+                    <img src={logo} />
+                </span>
+                <button className='cta'>
+                    FIND US IN STORES
+                </button>
+            </a>
             {/* <button 
                 className={activeMenu ? 'hamburger active' : 'hamburger'}
                 onClick={() => toggleMenu()}

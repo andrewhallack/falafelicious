@@ -7,18 +7,26 @@ import WhatsInside from './components/WhatsInside/WhatsInside'
 import Footer from './components/Footer/Footer'
 import MobileButton from './components/Navbar/MobileButton'
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom'
+
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
+      <Routes>
+        <Route path='/' element={<Hero />} />
+      </Routes>
       <HealthIcons />
       <Intro />
       <WhatsInside />
       <NutritionFacts />
       <Footer />
       <MobileButton />
-    </>
+    </Router>
   )
 }
 

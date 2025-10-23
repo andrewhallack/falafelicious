@@ -49,11 +49,12 @@ header {
             transform: translate(-50%, -50%);
             width: fit-content;
             height: fit-content;
+            cursor: pointer;
 
             img {
                 object-fit: cover;
-                width: 80px;
-                height: 80px;
+                width: 60px;
+                aspect-ratio: 1;
             }
         }
 
@@ -123,6 +124,10 @@ header {
             .menu {
                 /* display: none; */
                 column-gap: 12px;
+            }
+
+            .logo {
+                width: 40px;
             }
 
             .menu-mobile {
