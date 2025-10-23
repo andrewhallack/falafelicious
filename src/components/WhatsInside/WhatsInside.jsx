@@ -1,6 +1,6 @@
 import './whats-inside.css'
-import leftTable from '../../assets/left-table.png'
-import rightTable from '../../assets/right-table.png'
+import dippingFalafel from '../../assets/dipping-falafel.png'
+import makingSandwich from '../../assets/making-falafel-sandwich.png'
 import { motion } from "framer-motion"
 
 const WhatsInside = () => {
@@ -9,7 +9,7 @@ const WhatsInside = () => {
       <div className='image-wrapper'>
         <motion.img 
           className='left' 
-          src={leftTable} 
+          src={dippingFalafel} 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeOut", delay: 0 }}
@@ -17,7 +17,7 @@ const WhatsInside = () => {
         />
         <motion.img 
           className='right' 
-          src={rightTable} 
+          src={makingSandwich} 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeOut", delay: 0.15 }}
@@ -32,7 +32,7 @@ const WhatsInside = () => {
         transition={{ duration: 0.3, ease: "easeOut", delay: 0 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <img src={leftTable} />
+        <img src={dippingFalafel} />
       </motion.div>
 
       <motion.p
@@ -51,7 +51,7 @@ const WhatsInside = () => {
         transition={{ duration: 0.3, ease: "easeOut", delay: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <img src={rightTable} />
+        <img src={makingSandwich} />
       </motion.div>
     </section>
   )
