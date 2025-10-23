@@ -24,7 +24,7 @@ header {
         .menu {
             list-style: none;
             display: flex;
-            column-gap: 32px;
+            column-gap: 20px;
             padding: 0;
 
             li {
@@ -34,6 +34,10 @@ header {
                     color: var(--text-color);
                     font-weight: bold;
                     font-size: 14px;
+
+                    .icon {
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -113,10 +117,12 @@ header {
         height: fit-content;
         
         nav {
-            padding: 20px;
+            padding: 8px 20px;
+            /* height: 60px; */
             
             .menu {
-                display: none;
+                /* display: none; */
+                column-gap: 12px;
             }
 
             .menu-mobile {
@@ -150,6 +156,10 @@ header {
                         color: var(--text-color);
                         font-weight: bold;
                         font-size: 60px;
+                        
+                        .icon {
+                            width: 30px;
+                        }
                     }
                 }
             }

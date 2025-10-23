@@ -27,9 +27,8 @@ const Intro = () => {
           transition={{ duration: 0.3, ease: "easeOut", delay: 0.6 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Falafelicious was born in Austin, Texas, at a local farmers market. What started as a
-          family recipe quickly turned into a community favorite. We now want to share our authentic, 
-          Middle-Eastern treat with you.
+          What started as a family recipe at a small Austin farmers market quickly turned into a local obsession.
+          We’re proud to share our authentic, Middle Eastern falafel — made from scratch, packed with flavor, and loved by our community.
         </motion.p>
       </div>
     </section>

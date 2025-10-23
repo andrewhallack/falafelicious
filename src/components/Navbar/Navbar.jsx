@@ -1,5 +1,6 @@
 import './navbar.css'
 import logo from '../../assets/logo.png'
+import { FaTiktok, FaInstagram } from "react-icons/fa";
 
 import { useState } from 'react'
 
@@ -16,8 +17,12 @@ const Navbar = () => {
         <nav>
             <ul className='menu'>
                 {/* <li><a>ABOUT</a></li> */}
-                <li><a href='https://www.tiktok.com/@falafeliciousaus' target='_blank'>TIKTOK</a></li>
-                <li><a href='https://www.instagram.com/falafeliciousfoods/' target='_blank'>INSTAGRAM</a></li>
+                <li><a href='https://www.tiktok.com/@falafeliciousaus' target='_blank'>
+                    <FaTiktok className='icon' />
+                </a></li>
+                <li><a href='https://www.instagram.com/falafeliciousfoods/' target='_blank'>
+                    <FaInstagram className='icon' />
+                </a></li>
             </ul>
             {/* <span className='logo'>
                 <img src={logo} />
@@ -25,7 +30,7 @@ const Navbar = () => {
             <button className='cta'>
                 FIND US IN STORES
             </button>
-            <button 
+            {/* <button 
                 className={activeMenu ? 'hamburger active' : 'hamburger'}
                 onClick={() => toggleMenu()}
             >
@@ -33,10 +38,10 @@ const Navbar = () => {
                 <span className='bottom' />
             </button>
             <ul className={activeMenu ? 'menu-mobile active' : 'menu-mobile'}>
-                {/* <li><a>ABOUT</a></li> */}
+                <li><a>ABOUT</a></li>
                 <li><a href='https://www.tiktok.com/@falafeliciousaus' target='_blank'>TIKTOK</a></li>
                 <li><a href='https://www.instagram.com/falafeliciousfoods/' target='_blank'>INSTAGRAM</a></li>
-            </ul>
+            </ul> */}
         </nav>
     </header>
   )
