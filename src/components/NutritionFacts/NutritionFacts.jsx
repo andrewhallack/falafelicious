@@ -6,7 +6,7 @@ const NutritionFacts = () => {
         <div className='info'>
             <h3>WHOLESOME, SIMPLE, DELICIOUS</h3>
             <p>
-                Your delicous, authentic falafel is also packaged as a vegan, gluten-free, high-protein, and high-fiber 
+                Your delicous, authentic falafel is a vegan, gluten-free, high-protein, and high-fiber snack for your enjoyment and your nutrition.
             </p>
         </div>
 

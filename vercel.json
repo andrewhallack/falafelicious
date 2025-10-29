@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/find-in-stores", "destination": "/" }
+    ]
+  }
+  
