@@ -1,10 +1,11 @@
 import './mobile-button.css'
+import { Link } from 'react-router-dom'
 
 const MobileButton = () => {
   return (
-    <button className='mobile-button'>
+    <Link className='mobile-button' to='/find-in-stores'>
         FIND US IN STORES
-    </button>
+    </Link>
   )
 }
 

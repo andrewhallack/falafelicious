@@ -6,8 +6,7 @@ const NutritionFacts = () => {
         <div className='info'>
             <h3>WHOLESOME, SIMPLE, DELICIOUS</h3>
             <p>
-                Each bag of Falafelicious contains 12 crispy falafel balls made from chickpeas, parsley,
-                onion, garlic, and spices. That’s it — clean ingredients you can trust.
+                Your delicous, authentic falafel is also packaged as a vegan, gluten-free, high-protein, and high-fiber 
             </p>
         </div>
 

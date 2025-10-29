@@ -55,6 +55,8 @@ header {
                 object-fit: cover;
                 width: 60px;
                 aspect-ratio: 1;
+                border-radius: 100px;
+                background-color: var(--bg-color);
             }
         }
 
@@ -69,6 +71,7 @@ header {
             border-radius: 12px;
             cursor: pointer;
             transition: all 0.3s ease;
+            text-decoration: none;
 
             &:hover {
                box-shadow: 0 0 8px 2px #24532C55;
@@ -174,7 +177,7 @@ header {
             }
 
             .hamburger {
-                display: flex;
+                /* display: flex; */
             }
         }
     }

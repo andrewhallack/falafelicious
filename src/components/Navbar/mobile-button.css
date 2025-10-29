@@ -1,8 +1,11 @@
 .mobile-button {
     display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     position: fixed;
     width: 96vw;
-    padding: 12px 16px;
+    padding: 12px 0;
     font-family: 'Oswald';
     font-size: 14px;
     font-weight: 700;
@@ -14,8 +17,9 @@
     bottom: 2vw;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
 
     @media screen and (max-width: 1100px) {
-        display: block;
+        display: flex;
     }
 }

@@ -1,6 +1,7 @@
 import './navbar.css'
 import logo from '../../assets/logo.png'
 import { FaTiktok, FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 import { useState } from 'react'
 
@@ -16,7 +17,7 @@ const Navbar = () => {
     <header>
         <nav>
             <ul className='menu'>
-                {/* <li><a>ABOUT</a></li> */}
+                {/* <li><Link to='#/about'>ABOUT</Link></li> */}
                 <li><a href='https://www.tiktok.com/@falafeliciousaus' target='_blank'>
                     <FaTiktok className='icon' />
                 </a></li>
@@ -28,11 +29,11 @@ const Navbar = () => {
                 <span className='logo'>
                     <img src={logo} />
                 </span>
-                <button className='cta'>
-                    FIND US IN STORES
-                </button>
             </a>
-            {/* <button 
+            <Link className='cta' to='/find-in-stores'>
+                FIND US IN STORES
+            </Link>
+            <button 
                 className={activeMenu ? 'hamburger active' : 'hamburger'}
                 onClick={() => toggleMenu()}
             >
@@ -43,7 +44,7 @@ const Navbar = () => {
                 <li><a>ABOUT</a></li>
                 <li><a href='https://www.tiktok.com/@falafeliciousaus' target='_blank'>TIKTOK</a></li>
                 <li><a href='https://www.instagram.com/falafeliciousfoods/' target='_blank'>INSTAGRAM</a></li>
-            </ul> */}
+            </ul>
         </nav>
     </header>
   )
