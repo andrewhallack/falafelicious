@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api"
+import React, { useState, useEffect } from "react"
+import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api"
 
-const containerStyle = { width: "100%", height: "100%" }
+const containerStyle = { width: "100%", height: "100svh" }
 
 const center = { lat: 30.2672, lng: -97.7431 }
 
@@ -16,7 +16,13 @@ const addresses = [
 const FindInStores = () => {
   const [markers, setMarkers] = useState([])
 
-  const geocodeAddresses = (geocoder) => {
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+  })
+
+  useEffect(() => {
+    if (!isLoaded) return
+    const geocoder = new window.google.maps.Geocoder()
     const promises = addresses.map(
       (address) =>
         new Promise((resolve) => {
@@ -29,28 +35,19 @@ const FindInStores = () => {
           })
         })
     )
-
     Promise.all(promises).then((results) =>
       setMarkers(results.filter(Boolean))
     )
-  }
+  }, [isLoaded])
+
+  if (!isLoaded) return <div>Loading Map...</div>
 
   return (
-    <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={4}
-        onLoad={() => {
-          const geocoder = new window.google.maps.Geocoder()
-          geocodeAddresses(geocoder)
-        }}
-      >
-        {markers.map((pos, i) => (
-          <Marker key={i} position={pos} />
-        ))}
-      </GoogleMap>
-    </LoadScript>
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={11}>
+      {markers.map((pos, i) => (
+        <Marker key={i} position={pos} />
+      ))}
+    </GoogleMap>
   )
 }
 
